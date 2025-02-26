@@ -1,0 +1,760 @@
+/* 基础样式 */
+:root {
+    --primary-color: #333;
+    --secondary-color: #b37f45;
+    --light-color: #f8f9fa;
+    --dark-color: #212529;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: var(--dark-color);
+    background-color: #f9f9f9;
+}
+
+/* 语言切换功能 */
+[data-lang="en"] {
+    display: none;
+}
+
+html[lang="en"] [data-lang="en"] {
+    display: block;
+}
+
+html[lang="en"] [data-lang="zh"] {
+    display: none;
+}
+
+/* 下拉菜单样式 */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1000;
+    border-radius: 4px;
+    overflow: hidden;
+    right: 0;
+    top: 100%;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: var(--dark-color);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    color: var(--secondary-color);
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* 头部样式 */
+header {
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 15px 0;
+    position: relative;
+    z-index: 100;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--dark-color);
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--secondary-color);
+}
+
+.logo img {
+    height: 60px;
+    width: auto;
+    display: block;
+    margin-bottom: 0;
+}
+
+/* 按钮样式 */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: var(--secondary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 2px solid var(--secondary-color);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    min-width: 160px;
+    margin: 10px 5px;
+}
+
+.btn:hover {
+    background-color: #c29365;
+    border-color: #c29365;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--secondary-color);
+}
+
+.btn-secondary:hover {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.btn-large {
+    padding: 14px 28px;
+    font-size: 1.1rem;
+}
+
+/* 页脚样式 */
+footer {
+    background-color: var(--dark-color);
+    color: white;
+    padding: 60px 0 30px;
+    margin-top: 60px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-info img {
+    height: 60px;
+    width: auto;
+    margin-bottom: 15px;
+}
+
+.footer-info p, .footer-contact p {
+    color: #ddd;
+    margin-bottom: 10px;
+}
+
+.footer-contact h3, .footer-links h3, .footer-social h3 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: #ddd;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: var(--secondary-color);
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.copyright {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 30px;
+    text-align: center;
+    color: #ddd;
+}
+
+/* 联系页面特定样式 */
+.contact-header {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+}
+
+.contact-header:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(179, 127, 69, 0.9) 0%, rgba(179, 127, 69, 0.7) 100%);
+    z-index: 1;
+}
+
+.contact-header .container {
+    position: relative;
+    z-index: 2;
+}
+
+.contact-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.contact-header h1:after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: white;
+    margin: 15px auto 0;
+}
+
+.contact-header p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-main {
+    margin: 60px auto;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    background: white;
+}
+
+.contact-info-wrapper {
+    flex: 1;
+    min-width: 350px;
+    padding: 40px;
+    background-color: white;
+}
+
+.contact-info-title {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: var(--dark-color);
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.contact-info-title:after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: var(--secondary-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.contact-item {
+    display: flex;
+    margin-bottom: 25px;
+    align-items: flex-start;
+}
+
+.contact-icon {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    margin-right: 15px;
+    background-color: rgba(179, 127, 69, 0.1);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.contact-details {
+    flex: 1;
+}
+
+.contact-details h3 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    color: var(--dark-color);
+}
+
+.contact-details p {
+    color: #666;
+    line-height: 1.5;
+}
+
+.map-wrapper {
+    flex: 1;
+    min-width: 350px;
+    min-height: 450px;
+}
+
+.map-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+}
+
+/* 首页特定样式 */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('https://images.pexels.com/photos/1599791/pexels-photo-1599791.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 30px;
+}
+
+.features {
+    padding: 80px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: var(--dark-color);
+}
+
+.section-title p {
+    max-width: 700px;
+    margin: 0 auto;
+    color: #666;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.feature {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+}
+
+.feature img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    background-color: #e0e0e0;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.feature h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: var(--dark-color);
+}
+
+/* 改进项目展示部分 */
+.portfolio-preview {
+    padding: 80px 0;
+    background-color: var(--light-color);
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-preview:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(249, 249, 249, 0.8) 0%, rgba(249, 249, 249, 0.2) 100%);
+    z-index: 1;
+}
+
+.portfolio-preview .container {
+    position: relative;
+    z-index: 2;
+}
+
+.portfolio-preview h2 {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 50px;
+    font-size: 2.2rem;
+    color: var(--dark-color);
+    text-align: center;
+    width: 100%;
+}
+
+.portfolio-preview h2:after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: var(--secondary-color);
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.portfolio-item {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: all 0.4s ease;
+    position: relative;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+    display: block;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.05);
+}
+
+.portfolio-item h3 {
+    padding: 25px 20px;
+    text-align: center;
+    font-size: 1.3rem;
+    margin: 0;
+    color: var(--dark-color);
+    position: relative;
+}
+
+.portfolio-item h3:after {
+    content: '';
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 2px;
+    background-color: var(--secondary-color);
+    transition: width 0.3s ease;
+}
+
+.portfolio-item:hover h3:after {
+    width: 60px;
+}
+
+.portfolio-item .view-project {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: var(--secondary-color);
+    color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(179, 127, 69, 0.4);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.portfolio-item:hover .view-project {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* 响应式调整 */
+@media (max-width: 992px) {
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .portfolio-item img {
+        height: 250px;
+    }
+}
+
+/* 响应式样式 */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+    }
+    
+    .logo {
+        margin-bottom: 15px;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav ul li {
+        margin: 5px 0;
+    }
+    
+    .hero {
+        padding: 60px 0;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .contact-header {
+        padding: 40px 0;
+    }
+    
+    .contact-header h1 {
+        font-size: 2rem;
+    }
+    
+    .contact-main {
+        margin: 30px auto;
+    }
+    
+    .map-wrapper {
+        min-height: 300px;
+    }
+    
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* 重新设计CTA部分 */
+.cta {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url('https://images.pexels.com/photos/2724748/pexels-photo-2724748.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+    position: relative;
+    box-shadow: inset 0 0 200px rgba(0, 0, 0, 0.5);
+}
+
+.cta:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(179, 127, 69, 0.9) 0%, rgba(0, 0, 0, 0.8) 100%);
+    opacity: 0.8;
+    z-index: 1;
+}
+
+.cta .container {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+}
+
+.cta h2 {
+    font-size: 2.8rem;
+    margin-bottom: 30px;
+    font-weight: 700;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    line-height: 1.2;
+}
+
+.cta p {
+    font-size: 1.3rem;
+    max-width: 700px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+}
+
+.cta-highlight {
+    display: block;
+    font-size: 1.4rem;
+    margin: 20px 0;
+    color: #ffcc80;
+    font-weight: 600;
+}
+
+.cta-benefits {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.cta-benefit {
+    margin: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.cta-benefit-icon {
+    margin-right: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.cta .btn {
+    font-size: 1.2rem;
+    padding: 15px 35px;
+    border-radius: 50px;
+    margin: 10px 15px;
+    min-width: 200px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-width: 3px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s ease;
+}
+
+.cta .btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+.cta .phone-number {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    margin: 30px 0;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.cta .phone-number:hover {
+    color: var(--secondary-color);
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .cta h2 {
+        font-size: 2.2rem;
+    }
+    
+    .cta p {
+        font-size: 1.1rem;
+    }
+    
+    .cta-benefit {
+        margin: 10px;
+    }
+    
+    .cta .phone-number {
+        font-size: 1.8rem;
+    }
+} 

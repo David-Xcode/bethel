@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我们 - Bethel Kitchen Design</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="Bethhel-Logo.jpeg" alt="Bethel Kitchen Design Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" data-lang="zh">首页</a><a href="index.html" data-lang="en">Home</a></li>
+                    <li><a href="#" data-lang="zh">关于我们</a><a href="#" data-lang="en">About</a></li>
+                    <li><a href="#" data-lang="zh">项目展示</a><a href="#" data-lang="en">Portfolio</a></li>
+                    <li><a href="#" data-lang="zh">服务内容</a><a href="#" data-lang="en">Services</a></li>
+                    <li class="dropdown">
+                        <a href="#" data-lang="zh">语言</a>
+                        <a href="#" data-lang="en">Language</a>
+                        <div class="dropdown-content">
+                            <a href="#" onclick="switchToLanguage('zh-CN')">中文</a>
+                            <a href="#" onclick="switchToLanguage('en')">English</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="contact-header">
+        <div class="container">
+            <h1 data-lang="zh">联系我们</h1>
+            <h1 data-lang="en">Contact Us</h1>
+            <p data-lang="zh">我们期待为您提供专业的厨房设计与装修服务</p>
+            <p data-lang="en">We look forward to providing you with professional kitchen design and renovation services</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="contact-main">
+            <div class="contact-info-wrapper">
+                <h2 class="contact-info-title" data-lang="zh">联系方式</h2>
+                <h2 class="contact-info-title" data-lang="en">Contact Information</h2>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">📞</div>
+                    <div class="contact-details">
+                        <h3 data-lang="zh">电话</h3>
+                        <h3 data-lang="en">Phone</h3>
+                        <p>647-687-7373</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">✉️</div>
+                    <div class="contact-details">
+                        <h3 data-lang="zh">邮箱</h3>
+                        <h3 data-lang="en">Email</h3>
+                        <p>Bethelkd68@gmail.com</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">📍</div>
+                    <div class="contact-details">
+                        <h3 data-lang="zh">地址</h3>
+                        <h3 data-lang="en">Address</h3>
+                        <p>2265 Midland Ave, #2&3, Toronto, ON M1P 4S2</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">🕒</div>
+                    <div class="contact-details">
+                        <h3 data-lang="zh">营业时间</h3>
+                        <h3 data-lang="en">Business Hours</h3>
+                        <p data-lang="zh">周一至周六 9AM-7PM</p>
+                        <p data-lang="en">Monday to Saturday 9AM-7PM</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="map-wrapper">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2880.8701606367396!2d-79.27770522392026!3d43.77220377109636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d18a2277e6e3%3A0x3d31d97c8dbba747!2s2265%20Midland%20Ave%2C%20Scarborough%2C%20ON%20M1P%204S2%2C%20Canada!5e0!3m2!1sen!2sus!4v1682561325417!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <img src="Bethhel-Logo.jpeg" alt="Bethel Kitchen Design Logo">
+                    <p data-lang="zh">专业厨房设计与装修服务，为您打造理想的生活空间。</p>
+                    <p data-lang="en">Professional kitchen design and renovation services to create your ideal living space.</p>
+                </div>
+                <div class="footer-contact">
+                    <h3 data-lang="zh">联系我们</h3>
+                    <h3 data-lang="en">Contact Us</h3>
+                    
+                    <p data-lang="zh">电话: 647-687-7373</p>
+                    <p data-lang="en">Tel: 647-687-7373</p>
+                    
+                    <p data-lang="zh">邮箱: Bethelkd68@gmail.com</p>
+                    <p data-lang="en">Email: Bethelkd68@gmail.com</p>
+                    
+                    <p data-lang="zh">地址: 2265 Midland Ave, #2&3, Toronto, ON M1P 4S2</p>
+                    <p data-lang="en">Address: 2265 Midland Ave, #2&3, Toronto, ON M1P 4S2</p>
+                    
+                    <p data-lang="zh">营业时间: 周一至周六 9AM-7PM</p>
+                    <p data-lang="en">Business Hours: Mon-Sat 9AM-7PM</p>
+                </div>
+                <div class="footer-links">
+                    <h3 data-lang="zh">快速链接</h3>
+                    <h3 data-lang="en">Quick Links</h3>
+                    
+                    <ul>
+                        <li><a href="index.html" data-lang="zh">首页</a><a href="index.html" data-lang="en">Home</a></li>
+                        <li><a href="#" data-lang="zh">关于我们</a><a href="#" data-lang="en">About</a></li>
+                        <li><a href="#" data-lang="zh">项目展示</a><a href="#" data-lang="en">Portfolio</a></li>
+                        <li><a href="#" data-lang="zh">服务内容</a><a href="#" data-lang="en">Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3 data-lang="zh">关注我们</h3>
+                    <h3 data-lang="en">Follow Us</h3>
+                    
+                    <div class="social-icons">
+                        <a href="#"><img src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Facebook_colored_svg_copy-512.png" alt="Facebook" width="30"></a>
+                        <a href="#"><img src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Instagram_colored_svg_1-512.png" alt="Instagram" width="30"></a>
+                        <a href="#"><img src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Pinterest_colored_svg-512.png" alt="Pinterest" width="30"></a>
+                        <a href="#"><img src="https://cdn0.iconfinder.com/data/icons/social-media-2092/100/social-56-512.png" alt="Houzz" width="30"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Bethel Kitchen Design. <span data-lang="zh">保留所有权利</span><span data-lang="en">All Rights Reserved</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 语言切换功能
+        function switchToLanguage(lang) {
+            document.documentElement.lang = lang;
+            localStorage.setItem('language', lang);
+        }
+        
+        // 页面加载时检查之前选择的语言
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLanguage = localStorage.getItem('language');
+            if (savedLanguage) {
+                document.documentElement.lang = savedLanguage;
+            }
+        });
+    </script>
+</body>
+</html>

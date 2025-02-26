@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bethel Kitchen Design - 专业厨房设计与装修</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <!-- 使用实际的公司LOGO -->
+                <img src="Bethhel-Logo.jpeg" alt="Bethel Kitchen Design Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/about" data-lang="zh">关于我们</a><a href="/about" data-lang="en">About</a></li>
+                    <li><a href="/portfolio" data-lang="zh">项目展示</a><a href="/portfolio" data-lang="en">Portfolio</a></li>
+                    <li><a href="/services" data-lang="zh">服务内容</a><a href="/services" data-lang="en">Services</a></li>
+                    <li><a href="contact.html" data-lang="zh">联系我们</a><a href="contact.html" data-lang="en">Contact</a></li>
+                    <!-- 添加语言下拉菜单 -->
+                    <li class="dropdown">
+                        <a href="#" data-lang="zh">语言</a>
+                        <a href="#" data-lang="en">Language</a>
+                        <div class="dropdown-content">
+                            <a href="#" onclick="switchToLanguage('zh-CN')">中文</a>
+                            <a href="#" onclick="switchToLanguage('en')">English</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1 data-lang="zh">打造您梦想中的完美厨房</h1>
+            <h1 data-lang="en">Create Your Perfect Dream Kitchen</h1>
+            
+            <p data-lang="zh">专业的厨房设计与装修服务，提升您家的价值与舒适度</p>
+            <p data-lang="en">Professional kitchen design and renovation services to enhance your home's value and comfort</p>
+            
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn btn-large" data-lang="zh">免费咨询</a>
+                <a href="contact.html" class="btn btn-large" data-lang="en">Free Consultation</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h2 data-lang="zh">我们的优势</h2>
+            <h2 data-lang="en">Our Advantages</h2>
+            
+            <div class="feature-grid">
+                <div class="feature">
+                    <img src="https://images.pexels.com/photos/3214064/pexels-photo-3214064.jpeg" alt="专业设计">
+                    <h3 data-lang="zh">专业设计</h3>
+                    <h3 data-lang="en">Professional Design</h3>
+                    
+                    <p data-lang="zh">根据您的需求和空间提供个性化的厨房设计方案</p>
+                    <p data-lang="en">Personalized kitchen design solutions based on your needs and space</p>
+                </div>
+                <div class="feature">
+                    <img src="https://images.pexels.com/photos/129731/pexels-photo-129731.jpeg" alt="优质材料">
+                    <h3 data-lang="zh">优质材料</h3>
+                    <h3 data-lang="en">Quality Materials</h3>
+                    
+                    <p data-lang="zh">使用高品质的材料，确保您的厨房经久耐用</p>
+                    <p data-lang="en">Using high-quality materials to ensure your kitchen is durable</p>
+                </div>
+                <div class="feature">
+                    <img src="https://images.pexels.com/photos/5824530/pexels-photo-5824530.jpeg" alt="完美施工">
+                    <h3 data-lang="zh">完美施工</h3>
+                    <h3 data-lang="en">Perfect Construction</h3>
+                    
+                    <p data-lang="zh">经验丰富的施工团队，确保每个细节都完美呈现</p>
+                    <p data-lang="en">Experienced construction team ensuring every detail is perfectly presented</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio-preview">
+        <div class="container">
+            <h2 data-lang="zh">精选项目案例</h2>
+            <h2 data-lang="en">Featured Projects</h2>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="https://images.pexels.com/photos/3016430/pexels-photo-3016430.jpeg" alt="现代风格厨房">
+                    <h3 data-lang="zh">现代风格厨房</h3>
+                    <h3 data-lang="en">Modern Style Kitchen</h3>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg" alt="传统风格厨房">
+                    <h3 data-lang="zh">传统风格厨房</h3>
+                    <h3 data-lang="en">Traditional Style Kitchen</h3>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://images.pexels.com/photos/2062426/pexels-photo-2062426.jpeg" alt="北欧风格厨房">
+                    <h3 data-lang="zh">北欧风格厨房</h3>
+                    <h3 data-lang="en">Nordic Style Kitchen</h3>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://images.pexels.com/photos/6492403/pexels-photo-6492403.jpeg" alt="混合风格厨房">
+                    <h3 data-lang="zh">混合风格厨房</h3>
+                    <h3 data-lang="en">Hybrid Style Kitchen</h3>
+                </div>
+            </div>
+            <div class="cta-buttons">
+                <a href="/portfolio" class="btn btn-secondary" data-lang="zh">查看更多案例</a>
+                <a href="/portfolio" class="btn btn-secondary" data-lang="en">View More Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2 data-lang="zh">准备好开始您的厨房改造项目了吗？</h2>
+            <h2 data-lang="en">Ready to Start Your Kitchen Renovation Project?</h2>
+            
+            <p data-lang="zh">我们提供专业厨房设计和装修服务，让您的厨房焕然一新</p>
+            <p data-lang="en">We provide professional kitchen design and renovation services to transform your kitchen</p>
+            
+            <span class="cta-highlight" data-lang="zh">现在联系我们，即可获得免费设计咨询和预算估算！</span>
+            <span class="cta-highlight" data-lang="en">Contact us now for free design consultation and budget estimate!</span>
+            
+            <div class="cta-benefits">
+                <div class="cta-benefit">
+                    <div class="cta-benefit-icon">✓</div>
+                    <span data-lang="zh">免费上门测量</span>
+                    <span data-lang="en">Free On-site Measurement</span>
+                </div>
+                <div class="cta-benefit">
+                    <div class="cta-benefit-icon">✓</div>
+                    <span data-lang="zh">专业设计方案</span>
+                    <span data-lang="en">Professional Design Plans</span>
+                </div>
+                <div class="cta-benefit">
+                    <div class="cta-benefit-icon">✓</div>
+                    <span data-lang="zh">透明报价</span>
+                    <span data-lang="en">Transparent Pricing</span>
+                </div>
+            </div>
+            
+            <a href="tel:6476877373" class="phone-number">647-687-7373</a>
+            
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn btn-large" data-lang="zh">免费咨询</a>
+                <a href="contact.html" class="btn btn-large" data-lang="en">Free Consultation</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <!-- 页脚中也使用实际LOGO -->
+                    <img src="Bethhel-Logo.jpeg" alt="Bethel Kitchen Design Logo">
+                    <p data-lang="zh">专业厨房设计与装修服务，为您打造理想的生活空间。</p>
+                    <p data-lang="en">Professional kitchen design and renovation services to create your ideal living space.</p>
+                </div>
+                <div class="footer-contact">
+                    <h3 data-lang="zh">联系我们</h3>
+                    <h3 data-lang="en">Contact Us</h3>
+                    
+                    <p data-lang="zh">电话: 647-687-7373</p>
+                    <p data-lang="en">Tel: 647-687-7373</p>
+                    
+                    <p data-lang="zh">邮箱: Bethelkd68@gmail.com</p>
+                    <p data-lang="en">Email: Bethelkd68@gmail.com</p>
+                    
+                    <p data-lang="zh">地址: 2265 Midland Ave, #2&3, Toronto, ON M1P 4S2</p>
+                    <p data-lang="en">Address: 2265 Midland Ave, #2&3, Toronto, ON M1P 4S2</p>
+                    
+                    <p data-lang="zh">营业时间: 周一至周六 9AM-7PM</p>
+                    <p data-lang="en">Business Hours: Mon-Sat 9AM-7PM</p>
+                </div>
+                <div class="footer-links">
+                    <h3 data-lang="zh">快速链接</h3>
+                    <h3 data-lang="en">Quick Links</h3>
+                    
+                    <ul>
+                        <li><a href="/about" data-lang="zh">关于我们</a><a href="/about" data-lang="en">About</a></li>
+                        <li><a href="/portfolio" data-lang="zh">项目展示</a><a href="/portfolio" data-lang="en">Portfolio</a></li>
+                        <li><a href="/services" data-lang="zh">服务内容</a><a href="/services" data-lang="en">Services</a></li>
+                        <li><a href="contact.html" data-lang="zh">联系我们</a><a href="contact.html" data-lang="en">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3 data-lang="zh">关注我们</h3>
+                    <h3 data-lang="en">Follow Us</h3>
+                    
+                    <div class="social-icons">
+                        <a href="#"><img src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Facebook_colored_svg_copy-512.png" alt="Facebook" width="30"></a>
+                        <a href="#"><img src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Instagram_colored_svg_1-512.png" alt="Instagram" width="30"></a>
+                        <a href="#"><img src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Pinterest_colored_svg-512.png" alt="Pinterest" width="30"></a>
+                        <a href="#"><img src="https://cdn0.iconfinder.com/data/icons/social-media-2092/100/social-56-512.png" alt="Houzz" width="30"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Bethel Kitchen Design. <span data-lang="zh">保留所有权利</span><span data-lang="en">All Rights Reserved</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 更新语言切换功能
+        function switchToLanguage(lang) {
+            document.documentElement.lang = lang;
+            localStorage.setItem('language', lang);
+        }
+        
+        // 页面加载时检查之前选择的语言
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLanguage = localStorage.getItem('language');
+            if (savedLanguage) {
+                document.documentElement.lang = savedLanguage;
+            }
+            
+            // 平滑滚动效果
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html> 

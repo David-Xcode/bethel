@@ -20,20 +20,35 @@ body {
 }
 
 /* 语言切换功能 */
-[data-lang="zh"] {
+[data-lang] {
     display: none;
 }
 
-[data-lang="en"] {
+/* 默认显示英文（当html标签lang属性为en或未设置时） */
+html:not([lang="zh-CN"]) [data-lang="en"] {
     display: block;
 }
 
+/* 当html标签lang属性为zh-CN时显示中文 */
 html[lang="zh-CN"] [data-lang="zh"] {
     display: block;
 }
 
-html[lang="zh-CN"] [data-lang="en"] {
+/* 对于内联元素需特殊处理 */
+a[data-lang], span[data-lang], button[data-lang] {
     display: none;
+}
+
+html:not([lang="zh-CN"]) a[data-lang="en"],
+html:not([lang="zh-CN"]) span[data-lang="en"],
+html:not([lang="zh-CN"]) button[data-lang="en"] {
+    display: inline-block;
+}
+
+html[lang="zh-CN"] a[data-lang="zh"],
+html[lang="zh-CN"] span[data-lang="zh"],
+html[lang="zh-CN"] button[data-lang="zh"] {
+    display: inline-block;
 }
 
 /* 下拉菜单样式 */

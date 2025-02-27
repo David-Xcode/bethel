@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>项目展示 - Bethel Kitchen Design</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo/logo.png" alt="Bethel Kitchen Design Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" data-lang="zh">首页</a><a href="index.html" data-lang="en">Home</a></li>
+                    <li><a href="about.html" data-lang="zh">关于我们</a><a href="about.html" data-lang="en">About</a></li>
+                    <li class="current-page"><span data-lang="zh">项目展示</span><span data-lang="en">Portfolio</span></li>
+                    <li><a href="services.html" data-lang="zh">服务内容</a><a href="services.html" data-lang="en">Services</a></li>
+                    <li><a href="contact.html" data-lang="zh">联系我们</a><a href="contact.html" data-lang="en">Contact</a></li>
+                    <li class="dropdown">
+                        <a href="#" data-lang="zh">语言</a>
+                        <a href="#" data-lang="en">Language</a>
+                        <div class="dropdown-content">
+                            <a href="#" onclick="switchToLanguage('zh-CN')">中文</a>
+                            <a href="#" onclick="switchToLanguage('en')">English</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="portfolio-header">
+        <div class="container">
+            <h1 data-lang="zh">项目展示</h1>
+            <h1 data-lang="en">Our Portfolio</h1>
+            <p data-lang="zh">探索我们的厨房设计与装修项目</p>
+            <p data-lang="en">Explore our kitchen design and renovation projects</p>
+        </div>
+    </section>
+
+    <section class="portfolio-filter">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all" data-lang="zh">全部</button>
+                <button class="filter-btn active" data-filter="all" data-lang="en">All</button>
+                
+                <button class="filter-btn" data-filter="modern" data-lang="zh">现代风格</button>
+                <button class="filter-btn" data-filter="modern" data-lang="en">Modern</button>
+                
+                <button class="filter-btn" data-filter="traditional" data-lang="zh">传统风格</button>
+                <button class="filter-btn" data-filter="traditional" data-lang="en">Traditional</button>
+                
+                <button class="filter-btn" data-filter="nordic" data-lang="zh">北欧风格</button>
+                <button class="filter-btn" data-filter="nordic" data-lang="en">Nordic</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio-gallery">
+        <div class="container">
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="modern">
+                    <img src="images/portfolio/Blue1.jpg" alt="现代蓝色厨房">
+                    <div class="portfolio-overlay">
+                        <h3 data-lang="zh">蓝色现代厨房</h3>
+                        <h3 data-lang="en">Blue Modern Kitchen</h3>
+                        <p data-lang="zh">多伦多</p>
+                        <p data-lang="en">Toronto</p>
+                        <a href="#" class="portfolio-link" data-lang="zh">查看详情</a>
+                        <a href="#" class="portfolio-link" data-lang="en">View Details</a>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="modern">
+                    <img src="images/portfolio/Blue2.jpg" alt="豪华蓝色厨房">
+                    <div class="portfolio-overlay">
+                        <h3 data-lang="zh">豪华蓝色厨房岛台</h3>
+                        <h3 data-lang="en">Luxury Blue Kitchen Island</h3>
+                        <p data-lang="zh">密西沙加</p>
+                        <p data-lang="en">Mississauga</p>
+                        <a href="#" class="portfolio-link" data-lang="zh">查看详情</a>
+                        <a href="#" class="portfolio-link" data-lang="en">View Details</a>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="modern">
+                    <img src="images/portfolio/modern-kitchen.jpg" alt="现代风格厨房">
+                    <div class="portfolio-overlay">
+                        <h3 data-lang="zh">白色现代厨房</h3>
+                        <h3 data-lang="en">White Modern Kitchen</h3>
+                        <p data-lang="zh">斯卡伯勒</p>
+                        <p data-lang="en">Scarborough</p>
+                        <a href="#" class="portfolio-link" data-lang="zh">查看详情</a>
+                        <a href="#" class="portfolio-link" data-lang="en">View Details</a>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="traditional">
+                    <img src="images/portfolio/traditional-kitchen.jpg" alt="传统风格厨房">
+                    <div class="portfolio-overlay">
+                        <h3 data-lang="zh">传统风格厨房</h3>
+                        <h3 data-lang="en">Traditional Style Kitchen</h3>
+                        <p data-lang="zh">万锦</p>
+                        <p data-lang="en">Markham</p>
+                        <a href="#" class="portfolio-link" data-lang="zh">查看详情</a>
+                        <a href="#" class="portfolio-link" data-lang="en">View Details</a>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="nordic">
+                    <img src="https://images.pexels.com/photos/2062426/pexels-photo-2062426.jpeg" alt="北欧风格厨房">
+                    <div class="portfolio-overlay">
+                        <h3 data-lang="zh">北欧风格厨房</h3>
+                        <h3 data-lang="en">Nordic Style Kitchen</h3>
+                        <p data-lang="zh">里士满山</p>
+                        <p data-lang="en">Richmond Hill</p>
+                        <a href="#" class="portfolio-link" data-lang="zh">查看详情</a>
+                        <a href="#" class="portfolio-link" data-lang="en">View Details</a>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="modern">
+                    <img src="https://images.pexels.com/photos/6492403/pexels-photo-6492403.jpeg" alt="混合风格厨房">
+                    <div class="portfolio-overlay">
+                        <h3 data-lang="zh">混合风格厨房</h3>
+                        <h3 data-lang="en">Hybrid Style Kitchen</h3>
+                        <p data-lang="zh">奥克维尔</p>
+                        <p data-lang="en">Oakville</p>
+                        <a href="#" class="portfolio-link" data-lang="zh">查看详情</a>
+                        <a href="#" class="portfolio-link" data-lang="en">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio-cta">
+        <div class="container">
+            <h2 data-lang="zh">想要打造您理想中的厨房？</h2>
+            <h2 data-lang="en">Want to Create Your Dream Kitchen?</h2>
+            <p data-lang="zh">联系我们，获取免费设计咨询</p>
+            <p data-lang="en">Contact us for a free design consultation</p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn btn-large" data-lang="zh">免费咨询</a>
+                <a href="contact.html" class="btn btn-large" data-lang="en">Free Consultation</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <img src="images/logo/logo.png" alt="Bethel Kitchen Design Logo">
+                    <p data-lang="zh">专业厨房设计与装修服务，为您打造理想的生活空间。</p>
+                    <p data-lang="en">Professional kitchen design and renovation services to create your ideal living space.</p>
+                </div>
+                <div class="footer-contact">
+                    <h3 data-lang="zh">联系我们</h3>
+                    <h3 data-lang="en">Contact Us</h3>
+                    
+                    <p data-lang="zh">电话: 647-687-7373</p>
+                    <p data-lang="en">Tel: 647-687-7373</p>
+                    
+                    <p data-lang="zh">邮箱: Bethelkd68@gmail.com</p>
+                    <p data-lang="en">Email: Bethelkd68@gmail.com</p>
+                    
+                    <p data-lang="zh">地址: 2265 Midland Ave, #2&3, Toronto, ON M1P 4S2</p>
+                    <p data-lang="en">Address: 2265 Midland Ave, #2&3, Toronto, ON M1P 4S2</p>
+                    
+                    <p data-lang="zh">营业时间: 周一至周六 9AM-7PM</p>
+                    <p data-lang="en">Business Hours: Mon-Sat 9AM-7PM</p>
+                </div>
+                <div class="footer-links">
+                    <h3 data-lang="zh">快速链接</h3>
+                    <h3 data-lang="en">Quick Links</h3>
+                    
+                    <ul>
+                        <li><a href="index.html" data-lang="zh">首页</a><a href="index.html" data-lang="en">Home</a></li>
+                        <li><a href="about.html" data-lang="zh">关于我们</a><a href="about.html" data-lang="en">About</a></li>
+                        <li><a href="portfolio.html" data-lang="zh">项目展示</a><a href="portfolio.html" data-lang="en">Portfolio</a></li>
+                        <li><a href="services.html" data-lang="zh">服务内容</a><a href="services.html" data-lang="en">Services</a></li>
+                        <li><a href="contact.html" data-lang="zh">联系我们</a><a href="contact.html" data-lang="en">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3 data-lang="zh">关注我们</h3>
+                    <h3 data-lang="en">Follow Us</h3>
+                    
+                    <div class="social-icons">
+                        <a href="#"><img src="images/icons/facebook.png" alt="Facebook" width="30"></a>
+                        <a href="#"><img src="images/icons/instagram.png" alt="Instagram" width="30"></a>
+                        <a href="#"><img src="images/icons/pinterest.png" alt="Pinterest" width="30"></a>
+                        <a href="#"><img src="images/icons/houzz.png" alt="Houzz" width="30"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Bethel Kitchen Design. <span data-lang="zh">保留所有权利</span><span data-lang="en">All Rights Reserved</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 语言切换功能
+        function switchToLanguage(lang) {
+            document.documentElement.lang = lang;
+            localStorage.setItem('language', lang);
+        }
+        
+        // 页面加载时检查之前选择的语言
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLanguage = localStorage.getItem('language');
+            if (savedLanguage) {
+                document.documentElement.lang = savedLanguage;
+            }
+            
+            // 项目过滤功能
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const portfolioItems = document.querySelectorAll('.portfolio-item');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // 移除所有按钮的active类
+                    filterButtons.forEach(btn => {
+                        if (btn.dataset.filter === this.dataset.filter && btn.dataset.lang !== this.dataset.lang) {
+                            btn.classList.add('active');
+                        } else if (btn.dataset.filter !== this.dataset.filter) {
+                            btn.classList.remove('active');
+                        }
+                    });
+                    
+                    // 添加当前按钮的active类
+                    this.classList.add('active');
+                    
+                    // 过滤项目
+                    const filter = this.dataset.filter;
+                    
+                    portfolioItems.forEach(item => {
+                        if (filter === 'all' || item.dataset.category === filter) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html> 

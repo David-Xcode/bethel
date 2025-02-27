@@ -195,7 +195,7 @@ footer {
 }
 
 .footer-info img {
-    height: 60px;
+    height: 50px;
     width: auto;
     margin-bottom: 15px;
 }
@@ -633,7 +633,7 @@ html[lang="zh-CN"] .portfolio-item h3[data-lang="zh"] {
 /* 重新设计CTA部分 */
 .cta {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
-                url('https://images.pexels.com/photos/2724748/pexels-photo-2724748.jpeg');
+                url('images/backgrounds/cta-background.jpg');
     background-size: cover;
     background-position: center;
     color: white;
@@ -775,6 +775,132 @@ html[lang="zh-CN"] .cta-buttons a[data-lang="zh"] {
     }
     
     .cta .phone-number {
+        font-size: 1.8rem;
+    }
+}
+
+/* 关于我们页面样式 */
+.about-header {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+
+.about-header h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.about-header p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.about-content {
+    padding: 60px 0;
+}
+
+.about-intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 60px;
+    align-items: center;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.about-history, .about-services, .about-approach, .about-process {
+    margin-bottom: 60px;
+}
+
+.about-history h2, .about-services h2, .about-approach h2, .about-process h2 {
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+    font-size: 2rem;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.about-history h2:after, .about-services h2:after, .about-approach h2:after, .about-process h2:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: var(--secondary-color);
+}
+
+.about-history p, .about-services p, .about-approach p, .about-process p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.about-cta {
+    background-color: #f8f9fa;
+    padding: 60px;
+    border-radius: 12px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.about-cta h2 {
+    color: var(--dark-color);
+    margin-bottom: 20px;
+    font-size: 2.2rem;
+}
+
+.about-cta p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* 响应式调整 */
+@media (max-width: 992px) {
+    .about-intro {
+        grid-template-columns: 1fr;
+    }
+    
+    .about-image {
+        order: -1;
+    }
+    
+    .about-cta {
+        padding: 40px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-header {
+        padding: 40px 0;
+    }
+    
+    .about-header h1 {
+        font-size: 2.2rem;
+    }
+    
+    .about-content {
+        padding: 40px 0;
+    }
+    
+    .about-history h2, .about-services h2, .about-approach h2, .about-process h2, .about-cta h2 {
         font-size: 1.8rem;
     }
 } 

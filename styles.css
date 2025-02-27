@@ -1269,4 +1269,78 @@ nav ul li.current-page span {
     .services-cta h2 {
         font-size: 1.8rem;
     }
+}
+
+/* 项目卡片内容区样式优化 */
+.portfolio-item-content {
+    padding: 24px;
+    background: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.portfolio-item:hover .portfolio-item-content {
+    background-color: #f8f9fa;
+}
+
+.portfolio-item h3 {
+    margin: 0 0 12px 0;
+    color: #333;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.portfolio-item p {
+    margin: 0;
+    color: #666;
+    font-size: 15px;
+    line-height: 1.6;
+    letter-spacing: 0.3px;
+    min-height: 48px; /* 确保所有描述文本有一致的最小高度 */
+}
+
+/* 调整卡片边距和阴影 */
+.portfolio-item {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.12);
+}
+
+/* 调整卡片网格布局 */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+    margin: 40px 0;
+}
+
+/* 响应式调整 */
+@media (max-width: 992px) {
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+    
+    .portfolio-item-content {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .portfolio-item h3 {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
 } 

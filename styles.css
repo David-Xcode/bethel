@@ -21,34 +21,36 @@ body {
 
 /* 语言切换功能 */
 [data-lang] {
-    display: none;
+    display: none !important;
 }
 
 /* 默认显示英文（当html标签lang属性为en或未设置时） */
 html:not([lang="zh-CN"]) [data-lang="en"] {
-    display: block;
+    display: block !important;
 }
 
 /* 当html标签lang属性为zh-CN时显示中文 */
 html[lang="zh-CN"] [data-lang="zh"] {
-    display: block;
+    display: block !important;
 }
 
 /* 对于内联元素需特殊处理 */
-a[data-lang], span[data-lang], button[data-lang] {
-    display: none;
+a[data-lang], span[data-lang], button[data-lang], label[data-lang] {
+    display: none !important;
 }
 
 html:not([lang="zh-CN"]) a[data-lang="en"],
 html:not([lang="zh-CN"]) span[data-lang="en"],
-html:not([lang="zh-CN"]) button[data-lang="en"] {
-    display: inline-block;
+html:not([lang="zh-CN"]) button[data-lang="en"],
+html:not([lang="zh-CN"]) label[data-lang="en"] {
+    display: inline-block !important;
 }
 
 html[lang="zh-CN"] a[data-lang="zh"],
 html[lang="zh-CN"] span[data-lang="zh"],
-html[lang="zh-CN"] button[data-lang="zh"] {
-    display: inline-block;
+html[lang="zh-CN"] button[data-lang="zh"],
+html[lang="zh-CN"] label[data-lang="zh"] {
+    display: inline-block !important;
 }
 
 /* 下拉菜单样式 */
@@ -526,29 +528,16 @@ footer {
     transform: scale(1.05);
 }
 
-.portfolio-item h3 {
-    padding: 25px 20px;
-    text-align: center;
-    font-size: 1.3rem;
-    margin: 0;
-    color: var(--dark-color);
-    position: relative;
+.portfolio-item h3[data-lang] {
+    display: none !important;
 }
 
-.portfolio-item h3:after {
-    content: '';
-    position: absolute;
-    bottom: 15px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 40px;
-    height: 2px;
-    background-color: var(--secondary-color);
-    transition: width 0.3s ease;
+html:not([lang="zh-CN"]) .portfolio-item h3[data-lang="en"] {
+    display: block !important;
 }
 
-.portfolio-item:hover h3:after {
-    width: 60px;
+html[lang="zh-CN"] .portfolio-item h3[data-lang="zh"] {
+    display: block !important;
 }
 
 .portfolio-item .view-project {
@@ -758,6 +747,18 @@ footer {
 .cta .phone-number:hover {
     color: var(--secondary-color);
     transform: scale(1.05);
+}
+
+.cta-buttons a[data-lang] {
+    display: none !important;
+}
+
+html:not([lang="zh-CN"]) .cta-buttons a[data-lang="en"] {
+    display: inline-block !important;
+}
+
+html[lang="zh-CN"] .cta-buttons a[data-lang="zh"] {
+    display: inline-block !important;
 }
 
 @media (max-width: 768px) {

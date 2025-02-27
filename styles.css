@@ -20,15 +20,19 @@ body {
 }
 
 /* 语言切换功能 */
-[data-lang="en"] {
+[data-lang="zh"] {
     display: none;
 }
 
-html[lang="en"] [data-lang="en"] {
+[data-lang="en"] {
     display: block;
 }
 
-html[lang="en"] [data-lang="zh"] {
+html[lang="zh-CN"] [data-lang="zh"] {
+    display: block;
+}
+
+html[lang="zh-CN"] [data-lang="en"] {
     display: none;
 }
 
